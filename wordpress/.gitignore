@@ -4,4 +4,5 @@ wp/
 /content/upgrade
 /content/plugins/*/
 /content/themes/*/
-!/content/plugins/tuto-chapellerie
+!/content/plugins/chatelier
+!/content/themes/chatelier

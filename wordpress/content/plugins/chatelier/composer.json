@@ -1,0 +1,13 @@
+{
+    "name": "oclock/chatelier",
+    "authors": [
+        {
+            "name": "william",
+            "email": "email@email.fr"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"chatelier\\": "."}
+    }
+}
