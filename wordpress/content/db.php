@@ -1,1 +1,0 @@
-C:/wamp64/www/tuto-chapellerie/wordpress/content/plugins/query-monitor/wp-content/db.php
