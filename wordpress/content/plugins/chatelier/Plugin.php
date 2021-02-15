@@ -10,6 +10,7 @@ use chatelier\Taxonomy\StyleTaxonomy;
 use chatelier\Taxonomy\MaterialTaxonomy;
 
 define('COURSE_POST_TYPE_CLASS', 'chatelier\PostType\CoursePostType');
+define('REST_FIELD_CLASS', 'chatelier\Rest\RestFields');
 
 class Plugin
 {
@@ -20,6 +21,8 @@ class Plugin
 
         add_action('init', [COURSE_POST_TYPE_CLASS, 'register']);
         add_action('init', [COURSE_POST_TYPE_CLASS, 'registerMetas']);
+
+        add_action('rest_api_init', [REST_FIELD_CLASS, 'registerFeaturedMediaUrlField']);
 
         add_action('init', [self::class, 'registerTaxonomies']);
         
