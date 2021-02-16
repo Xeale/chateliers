@@ -11,8 +11,8 @@ class EditorCustomRole extends Role
         'edit_posts' => true,
         'edit_post' => true,
         'edit_others_posts' => true,
-        'edit_private_posts' =>true,
-        'edit_published_posts' =>true,
+        'edit_private_posts' => true,
+        'edit_published_posts' => true,
         'publish_posts' => true,
         'upload_files' => true,
         'edit_other_posts' => true,
@@ -44,4 +44,3 @@ class EditorCustomRole extends Role
         'create_users' => false,
     ];
 }
-

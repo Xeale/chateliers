@@ -11,12 +11,12 @@ class PostType
         register_post_type(
             static::POST_TYPE_KEY,
             [
-                'labels' => $labels,
-                'public' => true,
-                'hierarchical' => false,
-                'menu_icon' => 'dashicons-welcome-write-blog',
-                'show_in_rest' => true,
-                'supports' => [
+                'labels'        => $labels,
+                'public'        => true,
+                'hierarchical'  => false,
+                'menu_icon'     => 'dashicons-welcome-write-blog',
+                'show_in_rest'  => true,
+                'supports'      => [
                     'title',
                     'editor',
                     'thumbnail',
