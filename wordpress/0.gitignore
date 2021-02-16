@@ -1,0 +1,7 @@
+
+vendor/
+wp/
+/content/plugins/*/
+/content/themes/*/
+!/content/plugins/chatelier
+!/content/themes/chatelier
