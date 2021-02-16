@@ -4,7 +4,7 @@
       <router-link :to="{ name: 'home' }">Accueil</router-link>
       <router-link :to="{ name: 'course' }">Cours</router-link>
       <router-link :to="{ name: 'resource' }">Ressources</router-link>
-      <router-link :to="{ name: 'home' }">
+      <router-link :to="{ name: 'home' }" class='border-none'>
         <img
           class="logo"
           src="../assets/images/logoTransparent.png"

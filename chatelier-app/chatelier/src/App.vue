@@ -21,4 +21,11 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.router-link-exact-active{
+  border-bottom: 2px solid rgb(112, 230, 184);;
+}
+.border-none{
+  border: none;
+}
+</style>

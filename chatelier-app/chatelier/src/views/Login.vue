@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import $ from 'jquery'
+import $ from "jquery";
 export default {
   name: "Login",
   mounted() {
