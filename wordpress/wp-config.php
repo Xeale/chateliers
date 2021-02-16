@@ -29,7 +29,7 @@ define( 'DB_USER', 'chatelier' );
 define( 'DB_PASSWORD', 'chatelier' );
 
 /** MySQL hostname */
-define( 'DB_HOST', 'chatelier');
+define( 'DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
