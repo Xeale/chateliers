@@ -7,6 +7,7 @@ margin-bottom: 0.5rem;
 
 html, body{
     height: 100%;
+    font-family: rosario;
   }
   
   body{
@@ -47,7 +48,7 @@ html, body{
     /*top: 50%;
     left: 50%;*/
     /* transform:  translate(0%,0%); */
-    background: #f1f1f1;
+    background: #f1f1f177;
     height: 30px;
     border-radius: 30px;
     padding: 10px;
@@ -61,17 +62,17 @@ html, body{
 }
 
 .searchBox:hover > .searchButton {
-  background: white;
+  background: rgba(255, 255, 255, 0);
   color : #d5d8dd;
 }
 
 .searchButton {
-    color: white;
+    color: rgba(8, 8, 8, 0.678);
     /*float: right;*/
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background: #c5c9ce;
+    background: #00030700;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,7 +86,7 @@ html, body{
     outline:none;
     float:left;
     padding: 0;
-    color: rgb(48, 47, 47);
+    color: #75B1A9;
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;
@@ -105,10 +106,40 @@ html, body{
 h1 {
     font-family: 'Calligraffitti', cursive;
     font-weight: 260;
-    font-size: 300%;
+    font-size: 350%;
     margin-top: 4rem;
     margin-left: 6rem;
+    position: relative;
 }
 h2 {
-    font-family: rosari;
+    font-family: 'rosario';
+    font-weight: 400;
+    font-size: 150%;
+    margin-left: 6rem;
+    color: #AAA;
+    margin-top: 40px;
 }
+
+.oval {
+    height: 70px;
+    width: 510px;
+    background-color: rgba(100, 100, 100, 0);
+    border-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 260px;
+    margin-left: 2rem;
+    border: 2.1px solid rgba(3, 3, 3, 0.76);
+  }
+
+  .chapeau {
+    border-width: 2px 4px;
+    border-radius: 170px 170px 170px;
+    margin-left: 800px;
+    top: 240px;
+    width: 350px;
+    height: 550px;
+    position: absolute;
+    object-fit: cover;
+    object-position: 20% 0;
+  }

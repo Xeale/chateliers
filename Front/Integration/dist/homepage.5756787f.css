@@ -7,6 +7,7 @@ margin-bottom: 0.5rem;
 
 html, body{
     height: 100%;
+    font-family: rosario;
   }
   
   body{
@@ -85,7 +86,7 @@ html, body{
     outline:none;
     float:left;
     padding: 0;
-    color: rgb(48, 47, 47);
+    color: #75B1A9;
     font-size: 16px;
     transition: 0.4s;
     line-height: 40px;
@@ -105,12 +106,30 @@ html, body{
 h1 {
     font-family: 'Calligraffitti', cursive;
     font-weight: 260;
-    font-size: 300%;
+    font-size: 350%;
     margin-top: 4rem;
     margin-left: 6rem;
+    position: relative;
 }
 h2 {
-    font-family: rosari;
+    font-family: 'rosario';
+    font-weight: 400;
+    font-size: 150%;
+    margin-left: 6rem;
+    color: lightslategray;
+    margin-top: 40px;
 }
+
+.oval {
+    height: 70px;
+    width: 510px;
+    background-color: rgba(100, 100, 100, 0);
+    border-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    margin-left: 0.1rem;
+    border: 2.1px solid rgba(3, 3, 3, 0.76);
+  }
 
 /*# sourceMappingURL=/homepage.5756787f.css.map */
