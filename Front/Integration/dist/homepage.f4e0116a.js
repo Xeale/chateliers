@@ -184,7 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../../../../../../../home/etudiant/.npm-packages/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"homepage.css":[function(require,module,exports) {
+},{"./bundle-url":"../../../../../../../home/etudiant/.npm-packages/lib/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"assets/css/homepage.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "41917" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "38341" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -394,4 +394,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../../../../../../home/etudiant/.npm-packages/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/homepage.5756787f.js.map
+//# sourceMappingURL=/homepage.f4e0116a.js.map
