@@ -28,11 +28,11 @@ header nav {
   font-size: x-large;
 }
 
-a {
+/*a {
   text-decoration: none;
   color: #AAA;
   margin: 0 60px;
-}
+}*/
 
 #logo {
   width: 200px;
@@ -40,9 +40,37 @@ a {
   color: #AAA;
 }
 
-a:hover {
+/*a:hover {
   color: rgb(112, 230, 184);
+}*/
+
+
+a {
+  color: rgb(167, 39, 39);
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 5px 35px;
+  position: relative;
 }
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(134, 221, 199);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
 
 /*search bar*/
 
