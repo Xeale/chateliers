@@ -1,72 +1,5 @@
 <template>
-  <!--<div>
-    <div class="course">
-      <h1>Atelier paille</h1>
-      <article class="tuto">
-        <section class="informations">
-          <ul>
-            <li>Durée du cours : 25m</li>
-            <li>Coût en matériel : 15€</li>
-          </ul>
-          <div class="media-image" style></div>
-        </section>
-
-        <section class="matériel">
-          <h2>Matériel</h2>
-          <ul>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Mollitia, provident numquam.</li>
-            <li>Excepturi, quae earum?</li>
-          </ul>
-        </section>
-      </article>
-    </div>
-
-    <div class="course">
-      <h1>Atelier paille</h1>
-      <article class="tuto">
-        <section class="informations">
-          <ul>
-            <li>Durée du cours : 25m</li>
-            <li>Coût en matériel : 15€</li>
-          </ul>
-          <div class="media-image" style></div>
-        </section>
-
-        <section class="matériel">
-          <h2>Matériel</h2>
-          <ul>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Mollitia, provident numquam.</li>
-            <li>Excepturi, quae earum?</li>
-          </ul>
-        </section>
-      </article>
-    </div>
-
-    <div class="course">
-      <h1>Atelier paille</h1>
-      <article class="tuto">
-        <section class="informations">
-          <ul>
-            <li>Durée du cours : 25m</li>
-            <li>Coût en matériel : 15€</li>
-          </ul>
-          <div class="media-image" style></div>
-        </section>
-
-        <section class="matériel">
-          <h2>Matériel</h2>
-          <ul>
-            <li>Lorem, ipsum dolor.</li>
-            <li>Mollitia, provident numquam.</li>
-            <li>Excepturi, quae earum?</li>
-          </ul>
-        </section>
-      </article>
-    </div>
-  </div> -->
-
+  
 
     <main class="main-area">
         
@@ -297,7 +230,7 @@ img {
   margin-top: 5px;
 	background: rgb(255, 254, 254);
   margin-bottom: 2em;	
-  box-shadow: 3px 3px 8px hsla(0, 0%, 27%, 0.658);
+  box-shadow: 3px 3px 8px rgba(85, 85, 85, 0.514);
   border-radius: 1%;
   
 }
@@ -314,7 +247,7 @@ img {
 }
 
 .card a:hover {
-	box-shadow: 3px 3px 8px hsl(0, 0%, 30%, 0.800);
+	box-shadow: 3px 3px 8px rgba(85, 85, 85, 0.514);
 }
 
 .card-content {

@@ -150,7 +150,7 @@ h2 {
 }
 
 footer nav {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   box-shadow: 2px 2px 4px 4px rgba(29, 28, 26, 0.13);
   background-color: rgb(221, 219, 218);
