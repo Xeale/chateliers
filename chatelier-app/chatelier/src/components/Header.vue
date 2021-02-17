@@ -35,6 +35,6 @@ export default {
   name: "Header",
 };
 </script>
-<style>
+<style scoped>
 @import "../assets/css/homepage.css";
 </style>
