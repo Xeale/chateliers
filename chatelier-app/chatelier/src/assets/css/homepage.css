@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+
 .logo {
   width: 135px;
   margin-top: 0.5rem;
@@ -131,7 +133,7 @@ h2 {
   border-radius: 50%;
   position: absolute;
   top: 260px;
-  margin-left: 2rem;
+  margin-left: 5rem;
   border: 2.1px solid rgba(3, 3, 3, 0.76);
 }
 
@@ -160,3 +162,4 @@ footer nav {
   background-color: #fcfbfa;
   font-size: large;
 }
+

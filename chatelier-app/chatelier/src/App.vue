@@ -23,7 +23,8 @@ export default {
 
 <style>
 .router-link-exact-active{
-  border-bottom: 2px solid rgb(112, 230, 184);;
+  border-bottom: 2px solid rgb(112, 230, 184);
+  color: rgba(43, 43, 43, 0.849);
 }
 .border-none{
   border: none;
