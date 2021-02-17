@@ -35,7 +35,7 @@ const routes = [{
     },
     {
         name: 'about',
-        path: '/A propos',
+        path: '/A_propos',
         component: About
     },
     {
@@ -50,12 +50,12 @@ const routes = [{
     },
     {
         name: 'privacy',
-        path: '/Politique de confidentialité',
+        path: '/Politique_de_confidentialité',
         component: PrivacyPolicy
     },
     {
         name: 'cgv',
-        path: '/Conditions générales de vente',
+        path: '/Conditions_générales_de_vente',
         component: Cgv
     },
     {
@@ -73,5 +73,5 @@ const routes = [{
 
 export default new VueRouter({
     mode: "history",
-    routes // raccourci pour `routes: routes`
+    routes: routes
 })
