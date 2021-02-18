@@ -14,6 +14,7 @@ import PrivacyPolicy from './views/PrivacyPolicy'
 import Cgv from './views/Cgv'
 import Cookie from './views/Cookie'
 import Newsletter from './views/Newsletter'
+import NewsFull from './views/NewsFull'
 
 
 
@@ -67,6 +68,11 @@ const routes = [{
         name: 'newsletter',
         path: '/Newsletter',
         component: Newsletter
+    },
+    {
+        name: 'newsFull',
+        path: '/Article/:id',
+        component: NewsFull
     },
 
 ]

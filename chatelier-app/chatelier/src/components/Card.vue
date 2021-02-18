@@ -1,9 +1,10 @@
 <template>
+ <router-link :to="{ name: 'newsFull', params: { id: postID }}">
   <div class="m-4">
     <div
       class="rounded overflow-hidden shadow-lg transform hover:scale-110 motion-reduce:transform-none transition duration-300 ease-in-out ..."
     >
-      <img v-bind:src="picture" class="object-fill h-1/1" alt="Mountain" />
+      <img v-bind:src="picture" class="object-fill w-full" alt="Mountain" />
       <div class="px-6 py-4">
         <div class="font-bold text-xl mb-2">{{ title }}</div>
         <p class="text-gray-700 text-base" v-html="content"></p>
@@ -32,6 +33,7 @@
       </div>
     </div>
   </div>
+   </router-link>
 </template>
 
 <script>
