@@ -46,7 +46,7 @@ header nav {
 
 
 a {
-  color: rgb(167, 39, 39);
+  color: rgb(48, 39, 167);
   text-decoration: none;
   letter-spacing: 0.15em;
   
@@ -62,13 +62,14 @@ a:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: rgb(134, 221, 199);
+  background: rgb(221, 134, 202);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
 a:hover:after { 
   width: 100%; 
   left: 0; 
+  color: antiquewhite;
 }
 
 
