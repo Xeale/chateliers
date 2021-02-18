@@ -23,6 +23,8 @@ class Plugin
         add_action('init', [COURSE_POST_TYPE_CLASS, 'registerMetas']);
 
         add_action('rest_api_init', [REST_FIELD_CLASS, 'registerFeaturedMediaUrlField']);
+        add_action('rest_api_init', [REST_FIELD_CLASS, 'registerTaxonomyField']);
+
 
         add_action('init', [self::class, 'registerTaxonomies']);
         
