@@ -15,6 +15,7 @@ import Cgv from './views/Cgv'
 import Cookie from './views/Cookie'
 import Newsletter from './views/Newsletter'
 import NewsFull from './views/NewsFull'
+import CourseFull from './views/CourseFull'
 
 
 
@@ -73,6 +74,11 @@ const routes = [{
         name: 'newsFull',
         path: '/Article/:id',
         component: NewsFull
+    },
+    {
+        name: 'courseFull',
+        path: '/Cours/:id',
+        component: CourseFull
     },
 
 ]
