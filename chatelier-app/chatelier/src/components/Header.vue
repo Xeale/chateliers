@@ -64,7 +64,7 @@ a:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: rgb(221, 134, 202);
+  background: rgb(128, 216, 212);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }

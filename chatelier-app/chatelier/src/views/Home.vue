@@ -1,13 +1,17 @@
 <template>
+<div>
   <div>
     <h1>L'art de la chapellerie</h1>
-    <div class="oval"></div>
+    
     <h2>
       Apprenez la confection de chapeaux avec des experts reconnus,<br />de chez
       vous et à votre rythme
     </h2>
-    <img class="chapeau" src="../assets/images/chapeau.jpg" alt="chapeau">
-  </div>
+  </div> 
+  <div class="flex content-center justify-center">
+    <img class="m-4 w-9/12 h-96 object-cover" src="../assets/images/moules.jpg" alt="">
+  </div> 
+</div>
 </template>
 
 <script>
