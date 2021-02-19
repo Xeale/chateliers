@@ -45,32 +45,7 @@ header nav {
 }*/
 
 
-a {
-  color: rgb(48, 39, 167);
-  text-decoration: none;
-  letter-spacing: 0.15em;
-  
-  display: inline-block;
-  padding: 5px 35px;
-  position: relative;
-}
-a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: rgb(221, 134, 202);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-a:hover:after { 
-  width: 100%; 
-  left: 0; 
-  color: antiquewhite;
-}
+
 
 
 /*search bar*/
@@ -154,41 +129,8 @@ h2 {
   margin-top: 40px;
 }
 
-.oval {
-  height: 70px;
-  width: 510px;
-  background-color: rgba(100, 100, 100, 0);
-  border-color: black;
-  border-radius: 50%;
-  position: absolute;
-  top: 260px;
-  margin-left: 5rem;
-  border: 2.1px solid rgba(3, 3, 3, 0.76);
-}
 
-.chapeau {
-  border-width: 2px 4px;
-  border-radius: 170px 170px 170px;
-  margin-left: 800px;
-  top: 240px;
-  width: 300px;
-  height: 550px;
-  position: absolute;
-  object-fit: cover;
-  object-position: -20% 0 -20%;
-}
 
-footer nav {
-  position: fixed;
-  bottom: 0;
-  box-shadow: 2px 2px 4px 4px rgba(29, 28, 26, 0.13);
-  background-color: rgb(221, 219, 218);
-  height: 5%;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  background-color: #fcfbfa;
-  font-size: large;
-}
+
+
 
