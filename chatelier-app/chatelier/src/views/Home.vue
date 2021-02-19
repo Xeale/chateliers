@@ -8,7 +8,7 @@
       vous et à votre rythme
     </h2>
   </div> 
-  <div class="flex content-center justify-center">
+  <div class="flex content-center justify-center bg-gray-200 m-0">
     <img class="m-4 w-9/12 h-96 object-cover" src="../assets/images/moules.jpg" alt="">
   </div> 
 </div>
