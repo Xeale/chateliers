@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import store from './store'
 import Embed from 'v-video-embed'
 import VueSnap from 'vue-snap'
 import 'vue-snap/dist/vue-snap.css'
@@ -17,5 +18,6 @@ Vue.use(Embed);
 
 new Vue({
   router: router,
+  store: store,
   render: h => h(App),
 }).$mount('#app')
