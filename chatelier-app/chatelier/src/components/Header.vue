@@ -2,8 +2,12 @@
   <header class="header logo-only">
     <nav>
       <router-link :to="{ name: 'home' }">Accueil</router-link>
-      <!-- <div v-if="isConnected">Hello</div> -->
-      <router-link :to="{ name: 'course' }">Cours</router-link>
+      <div v-if="isConnected">
+        <router-link :to="{ name: 'course' }">Cours</router-link>
+      </div>
+      <div v-else>
+        <router-link :to="{ name: 'courseForbidden' }">Cours</router-link>
+      </div>
       <router-link :to="{ name: 'resource' }">Ressources</router-link>
       <router-link :to="{ name: 'home' }" class="border-none">
         <img
@@ -14,8 +18,8 @@
       </router-link>
       <router-link :to="{ name: 'about' }">A propos</router-link>
       <router-link :to="{ name: 'news' }">News</router-link>
-      
-      <div v-if="!isConnected">
+
+      <div v-if="isConnected">
         <router-link :to="{ name: 'profil' }">Mon espace</router-link>
       </div>
       <div v-else>
@@ -37,13 +41,12 @@
     </nav>
   </header>
 </template>
-
 <script>
 export default {
   name: "Header",
   computed: {
     isConnected() {
-      // on récupère l'état de connexion (booléen) depuis le state
+      // on récupère l'état de connexion
       return this.$store.state.isUserConnected;
     },
     username() {
