@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Embed from 'v-video-embed'
+import VueSnap from 'vue-snap'
+import 'vue-snap/dist/vue-snap.css'
 import App from './App.vue'
+
+Vue.use(VueSnap)
 
 // Vue Router
 import router from './routes'
