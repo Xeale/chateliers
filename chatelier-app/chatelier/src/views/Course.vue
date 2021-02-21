@@ -28,14 +28,12 @@ export default {
 
   created: function () {
     CourseService.getCoursesList()
-    // .then((data) => console.log(data.data[0].meta.URL_video))
+      // .then((data) => console.log(data.data[0].meta.URL_video))
       .then((data) => (this.courseList = data.data))
       .catch((error) => alert(error));
   },
 };
 </script>
-
-
 <style>
 @import "../assets/css/tailwind.css";
 </style>

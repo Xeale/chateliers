@@ -16,6 +16,8 @@ import Cookie from './views/Cookie'
 import Newsletter from './views/Newsletter'
 import NewsFull from './views/NewsFull'
 import CourseFull from './views/CourseFull'
+import Profil from './views/Profil'
+import CourseForbidden from './views/CourseForbidden'
 
 
 
@@ -79,6 +81,16 @@ const routes = [{
         name: 'courseFull',
         path: '/Cours/:id',
         component: CourseFull
+    },
+    {
+        name: 'profil',
+        path: '/mon_espace',
+        component: Profil
+    },
+    {
+        name: 'courseForbidden',
+        path: '/acces_interdit',
+        component: CourseForbidden
     },
 
 ]
