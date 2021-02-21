@@ -19,7 +19,7 @@
         reqired
         v-model="user.email"
       />
-        <input
+      <input
         type="text"
         placeholder="Entrez un mot de passe"
         reqired
@@ -32,13 +32,24 @@
 
     <!-- connexion -->
 
-    <form class="signIn">
+    <form class="signIn" v-on:submit.prevent="connectedUSer">
       <h3>Bienvenue !</h3>
       <!--connexion avec google à voir par la suite-->
       <!--<button class="ggle" type="button">Connexion avec Google</button> -->
       <!--<p>- ou -</p> -->
-      <input type="email" placeholder="Email" autocomplete="off" reqired />
-      <input type="Mot de passe" placeholder="Mot de passe" reqired />
+      <input
+        type="text"
+        placeholder="Email"
+        autocomplete="off"
+        reqired
+        v-model="emailValue"
+      />
+      <input
+        type="Mot de passe"
+        placeholder="Mot de passe"
+        reqired
+        v-model="passwordValue"
+      />
       <button class="form-btn sx back" type="button">Retour</button>
       <button class="form-btn dx" type="submit">Connexion</button>
     </form>
@@ -66,16 +77,22 @@ export default {
     });
   },
 
-  data: function(){
+  data: function () {
     return {
       user: {},
-    }
+      emailValue: "",
+      passwordValue: "",
+    };
   },
 
   methods: {
     addUser: function () {
-      console.log(this.user)
+      console.log(this.user);
       Authentication.createUser(this.user);
+    },
+    connectedUSer: function () {
+      console.log(this.emailValue, this.passwordValue)
+      Authentication.loginUser(this.emailValue, this.passwordValue);
     },
   },
 };
