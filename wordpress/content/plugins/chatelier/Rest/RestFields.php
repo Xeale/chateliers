@@ -65,5 +65,14 @@ class RestFields
                 }
             ]
         );
+           register_rest_field(
+            'post',
+            'tag_array',
+            [
+                'get_callback' => function ($post) {
+                    return  get_the_tags($post['id']);
+                }
+            ]
+        );
     }
 }
