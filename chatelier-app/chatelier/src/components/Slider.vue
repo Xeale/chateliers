@@ -1,14 +1,8 @@
 <template>
   <carousel class="story-carousel story-carousel--multiple story-carousel--images">
-        
-  >
     <slide class="story-carousel__slide">
-      <img
-        src="../assets/images/slider/photo-1557568850-6989e4c10b90.jpg"
-        alt=""
-      />
-    </slide>
-    <slide class="story-carousel__slide">
+  
+  
       <img src="../assets/images/slider/photo-1499111544217-9590382658d3.jpg"
     /></slide>
 
@@ -27,6 +21,7 @@
         src="../assets/images/slider/photo-1577357136355-a5902e90d8a9.jpg"
         alt=""
     /></slide>
+
   </carousel>
 </template>
 
@@ -35,7 +30,7 @@ import { Carousel, Slide } from "vue-snap";
 import "vue-snap/dist/vue-snap.css";
 export default {
   name: "Slider",
-  components: { Carousel, Slide },
+  components: { Carousel, Slide }
 };
 
 </script>
