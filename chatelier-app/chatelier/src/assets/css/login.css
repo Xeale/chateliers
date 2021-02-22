@@ -28,10 +28,10 @@ form {
 	box-sizing: border-box;
 }
 
-p {
+form p {
 	font-family: 'Rosario', sans-serif;
-	font-weight: 100;
 	text-transform: uppercase;
+	font-weight: 100;
 	font-size: 12px;
 	color: #4F6457;
 	margin-bottom: 40px;

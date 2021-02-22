@@ -56,7 +56,9 @@ export default {
 };
 </script>
 <style scoped>
+@import "../assets/css/tailwind.css";
 @import "../assets/css/homepage.css";
+
 
 nav a {
   color: gray;

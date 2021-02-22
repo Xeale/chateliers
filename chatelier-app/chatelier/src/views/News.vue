@@ -1,5 +1,5 @@
 <template>
-  <section class="w-4/5	  flex-col items-center		 p-20">
+  <section class="w-4/5 flex-col items-center p-20">
     <card
       class="w-full"
       v-for="post in postList"
@@ -9,7 +9,7 @@
       v-bind:picture="post.featured_media_url"
       v-bind:date="post.date"
       v-bind:postID="post.id"
-      v-bind:tag="post.tag"
+      v-bind:tag="post.tag_array"
     />
   </section>
 </template>
@@ -23,18 +23,14 @@ export default {
   data: () => {
     return { postList: [] };
   },
-
   name: "News",
 
   created: function () {
     PostService.getPostsList()
-      .then((data) => (this.postList = data.data)).then(()=>console.log(this.postList))
+      .then((data) => (this.postList = data.data))
       .catch((error) => alert(error));
   },
 };
 </script>
-
-
 <style>
-@import "../assets/css/tailwind.css";
 </style>

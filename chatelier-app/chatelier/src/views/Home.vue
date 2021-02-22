@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <Slider class="mt-40" />
+    <Slider/>
   </div>
 </template>
 <script>

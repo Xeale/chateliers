@@ -35,5 +35,4 @@ export default {
 };
 </script>
 <style>
-@import "../assets/css/tailwind.css";
 </style>

@@ -41,5 +41,4 @@ export default {
 .story-carousel__slide img {
   width: 25%;
 }
-
 </style>
