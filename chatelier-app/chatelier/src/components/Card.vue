@@ -1,39 +1,30 @@
 <template>
- <router-link :to="{ name: 'newsFull', params: { id: postID }}">
-  <div class="m-4">
-    <div
-      class="rounded overflow-hidden shadow-lg transform hover:scale-110 motion-reduce:transform-none transition duration-300 ease-in-out ..."
-    >
-      <img v-bind:src="picture" class="object-fill w-full" alt="Paille" />
-      <div class="px-6 py-4">
-        <div class="font-bold text-xl mb-2">{{ title }}</div>
-        <p class="text-gray-700 text-base" v-html="content"></p>
-      </div>
-      <div class="px-6 pt-4 pb-2">
-        <span
-          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-          >#paille</span
-        >
-        <span
-          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-          >#travel</span
-        >
-        <span
-          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-          >#été</span
-        >
-        <span
-          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-          >#winter</span
-        >
-        <span
-          class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-          >#winter</span
-        >
-      </div>
-    </div>
-  </div>
-   </router-link>
+  <router-link :to="{ name: 'newsFull', params: { id: postID } }">
+      <article class="flex flex-col shadow my-4">
+        <!-- Article Image -->
+        <a href="#" class="hover:opacity-75">
+          <img v-bind:src="picture" class="object-fill"
+          />
+        </a>
+        <div class="bg-white flex flex-col justify-start p-6">
+          <a href="#" class="text-blue-700 text-sm font-bold uppercase pb-4"
+            >{{ tag }}</a
+          >
+          <a href="#" class="text-3xl font-bold hover:text-gray-700 pb-4"
+            >{{ title }}</a
+          >
+          <p href="#" class="text-sm pb-3">
+            Publié le {{date | formatDate}}
+          </p>
+          <a href="#" class="pb-6" v-html="content"
+            ></a
+          >
+          <a href="#" class="uppercase text-gray-800 hover:text-black"
+            >Continue Reading <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+      </article>
+  </router-link>
 </template>
 
 <script>
@@ -44,10 +35,18 @@ export default {
     content: String,
     picture: String,
     postID: Number,
+    date: String,
+    tags: String,
   },
 };
 </script>
 
-<style>
+<style scoped>
+img{
+  width:400px;
+}
+template{
+  width: 800px;
+}
 </style>
 

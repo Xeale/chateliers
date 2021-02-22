@@ -1,18 +1,17 @@
 <template>
-  <div
-    class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-1"
-  >
- 
+  <section class="w-4/5	  flex-col items-center		 p-20">
     <card
+      class="w-full"
       v-for="post in postList"
       v-bind:key="post.id"
       v-bind:title="post.title.rendered"
       v-bind:content="post.excerpt.rendered"
       v-bind:picture="post.featured_media_url"
+      v-bind:date="post.date"
       v-bind:postID="post.id"
+      v-bind:tag="post.tag"
     />
-       
-  </div>
+  </section>
 </template>
 <script>
 import PostService from "../services/PostService";
@@ -29,7 +28,7 @@ export default {
 
   created: function () {
     PostService.getPostsList()
-      .then((data) => (this.postList = data.data))
+      .then((data) => (this.postList = data.data)).then(()=>console.log(this.postList))
       .catch((error) => alert(error));
   },
 };
@@ -38,4 +37,4 @@ export default {
 
 <style>
 @import "../assets/css/tailwind.css";
-</style>rgba(80, 28, 28, 0.705)rgba(80, 28, 28, 0.705)rgba(80, 28, 28, 0.705)
+</style>

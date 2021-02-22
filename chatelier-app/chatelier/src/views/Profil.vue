@@ -2,12 +2,15 @@
   <div>
     <h1>Mon espace</h1>
     <button class="btn-grad" v-on:click="deconnexion">Deconnexion</button>
+    <CardProfil />
   </div>
 </template>
 
 <script>
+import CardProfil from '../components/CardProfil';
 import Authentication from "../services/Authentication";
 export default {
+  components: {CardProfil},
   name: "Profil",
   methods: {
     deconnexion() {
