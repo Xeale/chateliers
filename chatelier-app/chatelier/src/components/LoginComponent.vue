@@ -76,7 +76,6 @@ export default {
       $(".signUp").removeClass("inactive-sx");
     });
   },
-
   data: function () {
     return {
       user: {},
@@ -84,7 +83,6 @@ export default {
       passwordValue: "",
     };
   },
-
   methods: {
     addUser: function () {
       console.log(this.user);

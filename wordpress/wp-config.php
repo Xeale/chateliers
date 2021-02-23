@@ -115,6 +115,8 @@ if (!defined('ENVIRONMENT')) {
 		}
 	}
 }
+define('JWT_AUTH_SECRET_KEY', '~.0!@tz3^mC8C]ss7|0aCEGCp1DxS!hU6*2q,vro7Rq$|IudQPR7a/??s+++(6W1');
+define('JWT_AUTH_CORS_ENABLE', true);
 
 
 /* That's all, stop editing! Happy publishing. */
