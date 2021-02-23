@@ -21,19 +21,16 @@ export default {
 
 <style>
 footer nav {
-  position: fixed;
-  bottom: 0;
+
   box-shadow: 2px 2px 4px 4px rgba(29, 28, 26, 0.13);
   background-color: rgb(221, 219, 218);
   height: 5%;
   display: flex;
   width: 100%;
-  align-items: center;
   justify-content: center;
   background-color: #fcfbfa;
   font-size: large;
 }
-
 
 
 </style>

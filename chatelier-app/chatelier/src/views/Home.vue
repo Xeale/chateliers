@@ -6,7 +6,7 @@
       </div>
       <div class="slide-right backg w-2/4 z-10 m-4 py-44 bg-white opacity-75 object-cover background">
         <div class="flex justify-center">
-          <div class="">
+          <div class="slide-right">
             <h1 class="text-5xl font-medium">L'art de la chapellerie</h1>
             <h2 class="mt-2">Créez vos chapeaux</h2>
           </div>
@@ -56,14 +56,11 @@ h2 {
 .slide-right {
    overflow: hidden;
 }
-.slide-right h1 {
+.slide-right  {
    animation: 3s slide-right;
    animation-delay: 0s;
 }
-.slide-right h2 {
-   animation: 2.5s slide-right;
-   animation-delay: 0s;
-}
+
 .slide-right .backg {
    animation: 2s slide-right;
    animation-delay: 0s;
