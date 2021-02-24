@@ -13,12 +13,20 @@
         </div>
         <div class="px-6 pt-4 pb-2">
           <span
-            class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" v-html="level"
-            >{{ level }}</span
+            class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >{{ levelList[0].name }}</span
           >
           <span
             class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-            >#travel</span
+            >{{ materialList[0].name }}</span
+          >
+            <span
+            class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >{{ styleList[0].name }}</span
+          >
+            <span
+            class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            >{{ toolList[0].name }}</span
           >
         </div>
       </div>
@@ -33,7 +41,10 @@ export default {
     content: String,
     courseID: Number,
     video: String,
-    level: String,
+    levelList: Array,
+    materialList: Array,
+    styleList: Array,
+    toolList: Array
   },
 };
 </script>

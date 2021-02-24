@@ -9,7 +9,10 @@
       v-bind:content="course.content.rendered"
       v-bind:picture="course.featured_media_url"
       v-bind:video="course.meta.URL_video[0]"
-      v-bind:level="course.level_array.name"
+      v-bind:levelList="course.level_array"
+      v-bind:materialList="course.material_array"
+      v-bind:styleList="course.style_array"
+      v-bind:toolList="course.tool_array"
       v-bind:courseID="course.id"
     />
   </div>
@@ -29,7 +32,7 @@ export default {
 
   created: function () {
     CourseService.getCoursesList()
-     // .then((data) => console.log(data.data.level_array))
+      //.then((data) => console.log(data.data[0].level_array[0].name))
       .then((data) => (this.courseList = data.data))
       .catch((error) => alert(error));
   },
