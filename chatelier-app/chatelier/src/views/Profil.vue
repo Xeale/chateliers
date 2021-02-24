@@ -1,8 +1,7 @@
 <template>
   <div>
-    <h1>Mon espace</h1>
-    <button class="btn-grad" v-on:click="deconnexion">Deconnexion</button>
     <CardProfil />
+    <button class="btn-grad" v-on:click="deconnexion">Deconnexion</button>
   </div>
 </template>
 

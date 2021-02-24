@@ -6,15 +6,18 @@
       >
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2">{{ title }}</div>
-          <video-embed :src="video"></video-embed>
+          <div class="wrapper-video">
+            <video-embed :src="video"></video-embed>
+            <div v-html="content"></div>
+          </div>
         </div>
         <div class="px-6 pt-4 pb-2">
           <span
-            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-            >#paille</span
+            class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2" v-html="level"
+            >{{ level }}</span
           >
           <span
-            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+            class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
             >#travel</span
           >
         </div>
@@ -30,10 +33,15 @@ export default {
     content: String,
     courseID: Number,
     video: String,
+    level: String,
   },
 };
 </script>
 
 <style>
+.wrapper-video{
+  display: flex;
+  gap: 1rem;
+}
 </style>
 
