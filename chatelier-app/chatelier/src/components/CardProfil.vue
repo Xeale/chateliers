@@ -1,14 +1,20 @@
 <template>
-  <h1>Profil</h1>
+  <div>
+    <h1>Bienvenue {{ $store.state.username }}</h1>
+  </div>
 </template>
 
 <script>
-export default {
- name: "CardProfil",
-}
 
+export default {
+  name: "CardProfil",
+  props: {
+    username: {
+      type: String,
+    },
+  },
+};
 </script>
 
 <style>
-
 </style>

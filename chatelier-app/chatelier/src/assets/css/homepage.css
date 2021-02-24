@@ -24,8 +24,8 @@ header nav {
   align-items: center;
   justify-content: center;
   background-color: #fcfbfa;
-  box-shadow: 0 2px 4px 0 rgba(29, 28, 26, 0.13);
   font-size: x-large;
+  box-shadow: inset 0px 0px 5px 5px rgb(29 28 26 / 5%);
 }
 
 /*a {
