@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="containerLogin">
     <!-- inscription -->
     <form class="signUp" v-on:submit.prevent="addUser">
       <h3>Créez votre compte</h3>

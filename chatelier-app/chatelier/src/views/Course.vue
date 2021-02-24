@@ -14,6 +14,7 @@
       v-bind:styleList="course.style_array"
       v-bind:toolList="course.tool_array"
       v-bind:courseID="course.id"
+      v-bind:classSpan="'inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'"
     />
   </div>
 </template>

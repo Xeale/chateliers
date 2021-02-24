@@ -52,7 +52,8 @@ export default {
 <style scoped>
 div{
   max-width: 75%;
-  margin-left: 10%;}
+  margin-left: 10%;
+  }
 h1 {
   text-align: center;
 }

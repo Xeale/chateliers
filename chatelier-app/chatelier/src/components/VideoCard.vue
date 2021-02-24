@@ -12,22 +12,21 @@
           </div>
         </div>
         <div class="px-6 pt-4 pb-2">
+          <span v-for="level in levelList" :key="level.id" :class="classSpan">{{
+            level.name
+          }}</span>
           <span
-            class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-            >{{ levelList[0].name }}</span
+            v-for="material in materialList"
+            :key="material.id"
+            :class="classSpan"
+            >{{ material.name }}</span
           >
-          <span
-            class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-            >{{ materialList[0].name }}</span
-          >
-            <span
-            class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-            >{{ styleList[0].name }}</span
-          >
-            <span
-            class="inline-block bg-gray-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-            >{{ toolList[0].name }}</span
-          >
+          <span v-for="style in styleList" :key="style.id" :class="classSpan">{{
+            style.name
+          }}</span>
+          <span v-for="tool in toolList" :key="tool.id" :class="classSpan">{{
+            tool.name
+          }}</span>
         </div>
       </div>
     </div>
@@ -44,13 +43,13 @@ export default {
     levelList: Array,
     materialList: Array,
     styleList: Array,
-    toolList: Array
+    toolList: Array,
+    classSpan: String,
   },
 };
 </script>
-
 <style>
-.wrapper-video{
+.wrapper-video {
   display: flex;
   gap: 1rem;
 }
