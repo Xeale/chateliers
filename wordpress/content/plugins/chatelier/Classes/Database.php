@@ -11,8 +11,15 @@ class Database
         global $wpdb;
         $charsetCollate = $wpdb->get_charset_collate();
         $tableName = self::TABLE_NAME;
-        $sql = "CREATE TABLE IF NOT EXISTS {$tableName} (`id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT ,`user_id` INT UNSIGNED NOT NULL,
-        `course_id` INT UNSIGNED NOT NULL, `add_date` DATE, `comment` TEXT) $charsetCollate";
+        $sql = "CREATE TABLE IF NOT EXISTS {$tableName} (
+            `id` INT PRIMARY KEY NOT NULL AUTO_INCREMENT ,
+            `user_id` INT UNSIGNED NOT NULL,
+            `course_id` INT UNSIGNED NOT NULL,
+            `add_date` DATE,
+            `comment` TEXT,
+            FOREIGN KEY (user_id) REFERENCES wp_users(id),
+            FOREIGN KEY (course_id) REFERENCES wp_posts(id)
+        ) $charsetCollate";
         $wpdb->query($sql);
     }
     static public function deleteTableCommentCourse()
