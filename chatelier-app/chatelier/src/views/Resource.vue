@@ -1,36 +1,56 @@
 <template>
-  <div
-    class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1"
-  >
- 
-    <card
-      v-for="post in postList"
-      v-bind:key="post.id"
-      v-bind:title="post.title.rendered"
-      v-bind:content="post.excerpt.rendered"
-      v-bind:picture="post.featured_media_url"
-      v-bind:postID="post.id"
-    />
-       
+  <div class="all-content">
+    <h1 class="title-content">Matèriel</h1>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
+    <div class="size-content">
+      <h1 class="title-content">Fournisseur</h1>
+    </div>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet consectetur elit</p>
+    </div>
+    <div class="size-content">
+      <h1 class="title-content">Histoire de la mode</h1>
+    </div>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
+    <div class="size-content">
+      <h1 class="title-content">Usage</h1>
+    </div>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet consectetur elit</p>
+    </div>
+    <div class="size-content">
+      <h1 class="title-content">Vocabulaire de la chapellerie</h1>
+    </div>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    </div>
   </div>
 </template>
-<script>
-import PostService from "../services/PostService";
-import Card from "../components/Card";
-export default {
-  components: {
-    Card,
-  },
-  data: () => {
-    return { postList: [] };
-  },
+<style>
+.size-content {
+  margin-top: 10% !important;
+}
+h1 {
+  font-size: 25px;
+}
+p {
+  padding: 5px;
+}
+.title-content {
+  width: 80%;
+  border-bottom: 1px solid  #C0C0C0;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+.content {
+  width: 80%;
+  border: 1px solid   #C0C0C0;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+</style>
 
-  name: "News",
-
-  created: function () {
-    PostService.getPostsList()
-      .then((data) => (this.postList = data.data))
-      .catch((error) => alert(error));
-  },
-};
-</script>
