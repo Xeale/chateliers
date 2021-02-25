@@ -1,17 +1,15 @@
 <template>
   <div>
-    <h1>Bienvenue {{ $store.state.username }}</h1>
+    <p>{{ title }}</p>
+    <textarea class="border rounded-md"></textarea>
   </div>
 </template>
 
 <script>
-
 export default {
   name: "CardProfil",
   props: {
-    username: {
-      type: String,
-    },
+    title: String,
   },
 };
 </script>

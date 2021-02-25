@@ -4,7 +4,7 @@ namespace chatelier\Classes;
 
 class Database
 {
-    const TABLE_NAME = "user_note";
+    const TABLE_NAME = "wp_user_note";
 
     static public function createTableCommentCourse()
     {

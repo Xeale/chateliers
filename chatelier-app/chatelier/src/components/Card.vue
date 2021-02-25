@@ -21,7 +21,7 @@
         :to="{ name: 'newsFull', params: { id: postID } }"
         class="uppercase text-gray-800 hover:text-black"
       >
-        Continue Reading <i class="fas fa-arrow-right"></i
+        Continuer la lecture <i class="fas fa-arrow-right"></i
       ></router-link>
     </div>
   </article>

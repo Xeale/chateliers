@@ -8,35 +8,30 @@ class Route
     {
         register_rest_route(
             'chatelier/v1',
-            '/profil/',
+            '/profil/(?P<user_id>\d+)',
             [
                 'methods' => 'GET',
-                'callback' => function ($data) {
-                    global $wpdb;
-                    $sql = "SELECT * FROM `user_note`";
-                    $list = $wpdb->get_results($sql);
-                    return $list;
-                },
-                'args' => [
-                    'id'
-                ],
+                'callback' => [self::class, 'getFavorite'],
             ]
         );
         register_rest_route(
             'chatelier/v1',
-            '/profil/',
+            '/profil/(?P<id>\d+)',
             [
                 'methods' => 'POST',
-                'callback' => function ($data) {
-                    global $wpdb;
-                    $sql = "INSERT INTO  `user_note`  (`comment`) VALUES ('')";
-                    $list = $wpdb->get_results($sql);
-                    return $list;
-                },
-                'args' => [
-                    'id'
-                ],
+                'callback' => [self::class, 'postFavorite'],
             ]
         );
+    }
+    static public function getFavorite($data)
+    {
+        global $wpdb;
+        $sql = "SELECT * FROM `wp_user_note` WHERE user_id = {$data['user_id']}";
+        return $wpdb->get_results($sql);
+    }
+
+    static public function postFavorite($data)
+    {
+        // TODO
     }
 }
