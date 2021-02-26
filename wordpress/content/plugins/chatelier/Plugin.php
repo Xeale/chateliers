@@ -22,6 +22,7 @@ class Plugin
 
         add_action('init', [COURSE_POST_TYPE_CLASS, 'register']);
         add_action('init', [COURSE_POST_TYPE_CLASS, 'registerMetas']);
+        add_action('init',['chatelier\PostType\PagePostType','registerMetas' ]);
 
         add_action('rest_api_init', [REST_FIELD_CLASS, 'registerFeaturedMediaUrlField']);
         add_action('rest_api_init', [REST_FIELD_CLASS, 'registerTaxonomyField']);

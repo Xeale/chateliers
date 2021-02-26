@@ -1,4 +1,5 @@
 <?php
+
 namespace chatelier\PostType;
 
 class PostType
@@ -33,16 +34,17 @@ class PostType
         // si on a des meta à déclarer pour notre CPT
         if (static::POST_TYPE_META_KEYS) {
             // pour chacune de ces meta
-            foreach(static::POST_TYPE_META_KEYS as $post_meta_key)
-            // on la déclare
-            register_post_meta(
-                static::POST_TYPE_KEY, // la clef du CPT
-                $post_meta_key, // la clef de la meta courante
-                [
-                    // on la rend accessible dans la REST API
-                    'show_in_rest' => true
-                ]
-            );
+            foreach (static::POST_TYPE_META_KEYS as $post_meta_key) {
+                // on la déclare
+                register_post_meta(
+                    static::POST_TYPE_KEY, // la clef du CPT
+                    $post_meta_key, // la clef de la meta courante
+                    [
+                        // on la rend accessible dans la REST API
+                        'show_in_rest' => true
+                    ]
+                );
+            }
         }
     }
 }

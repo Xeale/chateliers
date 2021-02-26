@@ -19,7 +19,16 @@ class Route
             '/profil/(?P<id>\d+)',
             [
                 'methods' => 'POST',
-                'callback' => [self::class, 'postFavorite'],
+                'callback' => [self::class, 'createFavorite'],
+            ]
+        );
+
+        register_rest_route(
+            'chatelier/v1',
+            '/profil/(?P<id>\d+)',
+            [
+                'methods' => 'PATCH',
+                'callback' => [self::class, 'updateFavorite'],
             ]
         );
     }
@@ -30,8 +39,15 @@ class Route
         return $wpdb->get_results($sql);
     }
 
-    static public function postFavorite($data)
+    static public function updateFavorite()
     {
-        // TODO
+        global $wpdb;
+        return $wpdb->update( 'wp_user_note',["comment"=>"..."],["user_id" => "..."]);
+    }
+
+    static public function createFavorite()
+    {
+        global $wpdb;
+        return $wpdb->insert( 'wp_user_note',["comment"=>"..."]);
     }
 }

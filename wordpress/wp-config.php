@@ -79,7 +79,8 @@ $table_prefix = 'wp_';
  */
 define( 'WP_DEBUG', true );
 
-define( 'WP_HOME', rtrim( 'http://localhost/projet-tuto-chapellerie/wordpress/', '/' ) );
+// define( 'WP_HOME', rtrim( 'http://localhost/projet-tuto-chapellerie/wordpress/', '/' ) );
+define( 'WP_HOME', rtrim( 'http://52.200.116.71/projet-tuto-chapellerie/wordpress/', '/' ) );
 define( 'WP_SITEURL',  WP_HOME . '/wp' );
 define( 'WP_CONTENT_URL', WP_HOME . '/content' );
 define( 'WP_CONTENT_DIR', __DIR__ . '/content' );
