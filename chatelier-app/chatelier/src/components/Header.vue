@@ -8,7 +8,7 @@
       <div v-else>
         <router-link :to="{ name: 'courseForbidden' }">Cours</router-link>
       </div>
-      <router-link :to="{ name: 'resource' }">Ressources</router-link>
+      <router-link :to="{ name: 'ressources' }">Ressources</router-link>
       <router-link :to="{ name: 'home' }" class="border-none">
         <img
           class="logo"
