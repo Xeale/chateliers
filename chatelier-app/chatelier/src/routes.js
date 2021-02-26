@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 // on importe les composants nécessaires pour Vue Router
 import Home from './views/Home'
 import Course from './views/Course'
-import Resource from './views/Resource'
+import Ressources from './views/Ressources'
 import About from './views/About'
 import News from './views/News'
 import Login from './views/Login'
@@ -33,9 +33,9 @@ const routes = [{
         component: Course
     },
     {
-        name: 'resource',
+        name: 'ressources',
         path: '/Ressources',
-        component: Resource
+        component: Ressources
     },
     {
         name: 'about',

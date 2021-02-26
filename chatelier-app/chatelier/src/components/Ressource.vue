@@ -1,39 +1,50 @@
 <template>
-  <div class="all-content">
+  <div>
     <h1 class="title-content">Matèriel</h1>
     <div class="content">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+      <p v-html="materiel"></p>
     </div>
-    <div class="size-content">
+    <div>
       <h1 class="title-content">Fournisseur</h1>
     </div>
     <div class="content">
-      <p>Lorem ipsum dolor sit amet consectetur elit</p>
+      <p v-html="fournisseur"></p>
     </div>
-    <div class="size-content">
+    <div>
       <h1 class="title-content">Histoire de la mode</h1>
     </div>
     <div class="content">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+      <p v-html="histoireMode"></p>
     </div>
-    <div class="size-content">
+    <div>
       <h1 class="title-content">Usage</h1>
     </div>
     <div class="content">
-      <p>Lorem ipsum dolor sit amet consectetur elit</p>
+      <p v-html="usage"></p>
     </div>
-    <div class="size-content">
+    <div>
       <h1 class="title-content">Vocabulaire de la chapellerie</h1>
     </div>
     <div class="content">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+      <p v-html="vocabulaire"></p>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "Ressource",
+  props: {
+    materiel: [String],
+    fournisseur: String,
+    histoireMode: String,
+    usage: String,
+    vocabulaire: String,
+  },
+};
+</script>
 <style>
-.size-content {
-  margin-top: 10% !important;
-}
+
 h1 {
   font-size: 25px;
 }
@@ -42,15 +53,14 @@ p {
 }
 .title-content {
   width: 80%;
-  border-bottom: 1px solid  #C0C0C0;
+  border-bottom: 1px solid #c0c0c0;
   margin-left: 10%;
   margin-top: 5%;
 }
 .content {
   width: 80%;
-  border: 1px solid   #C0C0C0;
+  border: 1px solid #c0c0c0;
   margin-left: 10%;
   margin-top: 2%;
 }
 </style>
-
