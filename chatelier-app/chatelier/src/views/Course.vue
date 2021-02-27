@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-gray-200  p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1"
+    class="bg-gray-200 p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1"
   >
     <VideoCard
       v-for="course in courseList"
@@ -25,7 +25,7 @@ export default {
   components: {
     VideoCard,
   },
-  data: () => {
+  data() {
     return { courseList: [] };
   },
 
@@ -33,12 +33,10 @@ export default {
 
   created: function () {
     CourseService.getCoursesList()
-      //.then((data) => console.log(data.data[0].level_array[0].name))
       .then((data) => (this.courseList = data.data))
       .catch((error) => alert(error));
   },
 };
 </script>
 <style scoped>
-
 </style>

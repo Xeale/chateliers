@@ -34,7 +34,6 @@ export default {
   },
   created: function () {
     CourseService.getCoursesList()
-      //.then((data) => console.log(data.data[0].level_array[0].name))
       .then((data) => (this.courseList = data.data))
       .catch((error) => alert(error));
   },
