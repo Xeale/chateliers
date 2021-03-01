@@ -1,7 +1,14 @@
 <template>
-  <div class="p-10 course">
-    <Course :title="title" :video="video" />
+
+    <div>
+    <Course :title="title"  />
+    <Course  :video="video"/>
+
   </div>
+        
+ 
+  
+  
 </template>
 <script>
 import Course from "../components/Course";
@@ -19,7 +26,7 @@ export default {
       // console.log(response.data);
       this.title = response.data.title.rendered;
       this.video = response.data.meta.URL_video[0];
-    });
+    }); 
   },
 };
 </script>
