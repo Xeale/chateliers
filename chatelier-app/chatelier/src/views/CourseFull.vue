@@ -1,9 +1,7 @@
 <template>
 
     <div>
-    <Course :title="title"  />
-    <Course  :video="video"/>
-
+    <Course :title="title" :video="video" :content="content"/>
   </div>
         
  
@@ -26,6 +24,9 @@ export default {
       // console.log(response.data);
       this.title = response.data.title.rendered;
       this.video = response.data.meta.URL_video[0];
+      this.content = response.data.content.rendered;
+
+
     }); 
   },
 };

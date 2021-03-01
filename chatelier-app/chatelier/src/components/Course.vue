@@ -2,6 +2,7 @@
   <div class="m-4">
     <div class="font-bold text-xl mb-2">{{ title }}</div>
     <video-embed :src="video"></video-embed>
+    <p v-html="content"></p>
   </div>
 </template>
 <script>

@@ -2,48 +2,21 @@
 <div>
   <div id="SiteNav" class="site-nav" role="menu">
           <ul class="list--nav">
-            
-              
-              
                 <li class="site-nav__element ">
                   <a href="https://shop.hatacademy.com/collections/millinery-courses" class="site-nav__link">All Courses</a>
                 </li>
-              
-            
-              
-              
                 <li class="site-nav__element ">
                   <a href="https://shop.hatacademy.com/pages/tutors" class="site-nav__link">Your Tutors</a>
                 </li>
-              
-            
-              
-              
                 <li class="site-nav__element ">
                   <a href="/pages/millinery-supplies" class="site-nav__link">Millinery Supplies</a>
                 </li>
-              
-            
-              
-              
                 <li class="site-nav__element ">
                   <a href="/pages/hat-blocks" class="site-nav__link">Hat Blocks</a>
                 </li>
-              
-            
             
           </ul>
           <ul class="list--inline social-links">
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
           </ul>
         </div>
   <div
