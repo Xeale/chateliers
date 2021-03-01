@@ -2,13 +2,13 @@
   <header class="header logo-only">
     <nav>
       <router-link :to="{ name: 'home' }">Accueil</router-link>
-      <div v-if="isConnected">
+       <div v-if="isConnected">
         <router-link :to="{ name: 'course' }">Cours</router-link>
       </div>
       <div v-else>
         <router-link :to="{ name: 'courseForbidden' }">Cours</router-link>
       </div>
-      <router-link :to="{ name: 'ressources' }">Ressources</router-link>
+      <router-link :to="{ name: 'resource' }">Ressources</router-link>
       <router-link :to="{ name: 'home' }" class="border-none">
         <img
           class="logo"
@@ -39,6 +39,7 @@
         </button>
       </div>
     </nav>
+    
   </header>
 </template>
 <script>
