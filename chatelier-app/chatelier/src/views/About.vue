@@ -39,8 +39,6 @@ export default {
     display: flex;
     gap: 1rem;
   }
-  
-  
 }
 
 </style>
