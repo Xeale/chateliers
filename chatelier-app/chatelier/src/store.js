@@ -1,10 +1,15 @@
 import Vuex from 'vuex'
 import Vue from 'vue'
+import createPersistedState from 'vuex-persistedstate'
 
 Vue.use(Vuex)
 
 // on crée le Store de l'application
 const store = new Vuex.Store({
+
+    plugins: [createPersistedState({
+        storage: window.sessionStorage,
+    })],
     // on crée un objet qui est l'état de notre application
     state: {
         // on stocke un booléen qui représente l'état de la connexion de l'utilisateur (true => connecté)
