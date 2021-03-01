@@ -34,6 +34,7 @@ export default {
   },
   created: function () {
     CourseService.getCoursesList()
+      //.then((data) => console.log(data.data[0].level_array[0].name))
       .then((data) => (this.courseList = data.data))
       .catch((error) => alert(error));
   },
@@ -48,9 +49,9 @@ export default {
 .btn-grad {
   background-image: linear-gradient(
     to right,
-    #200122 0%,
-    #6f0000 51%,
-    #200122 100%
+    #1a6b5a 0%,
+    #73c4b6 51%,
+    #1a6b5a 100%
   );
 }
 .btn-grad {
