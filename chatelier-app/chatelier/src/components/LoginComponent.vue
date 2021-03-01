@@ -14,13 +14,13 @@
         v-model="user.username"
       />
       <input
-        type="text"
+        type="email"
         placeholder="Entrez un email"
         reqired
         v-model="user.email"
       />
       <input
-        type="text"
+        type="password"
         placeholder="Entrez un mot de passe"
         reqired
         v-model="user.password"
@@ -38,14 +38,14 @@
       <!--<button class="ggle" type="button">Connexion avec Google</button> -->
       <!--<p>- ou -</p> -->
       <input
-        type="text"
+        type="email"
         placeholder="Email"
         autocomplete="off"
         reqired
         v-model="emailValue"
       />
       <input
-        type="Mot de passe"
+        type="password"
         placeholder="Mot de passe"
         reqired
         v-model="passwordValue"
