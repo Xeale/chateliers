@@ -1,14 +1,14 @@
 <template>
   <div class="ressources">
-    <h1>Matériel</h1>
+    <h1 id="materiel">Matériel</h1>
     <p v-html="materiel"></p>
-    <h1>Fournisseur</h1>
+    <h1 id="fournisseur">Fournisseur</h1>
     <p v-html="fournisseur"></p>
-    <h1>Histoire de la mode</h1>
+    <h1 id="histoireMode">Histoire de la mode</h1>
     <p v-html="histoireMode"></p>
-    <h1>Usage</h1>
+    <h1 id="usage">Usage</h1>
     <p v-html="usage"></p>
-    <h1>Vocabulaire de la chapellerie</h1>
+    <h1 id="vocabulaire">Vocabulaire de la chapellerie</h1>
     <p v-html="vocabulaire"></p>
   </div>
 </template>
@@ -36,7 +36,7 @@ $Border: 1.5px solid #c0c0c0;
     margin: 0;
     font-size: 25px;
     border-bottom: $Border;
-    margin-top: 5%;
+    padding-top: 2rem;
   }
   p {
     padding: 10px;
