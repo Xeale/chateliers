@@ -1,16 +1,15 @@
 <template>
-<div class="flex flex-wrap">
-  <article class="flex flex-center m-4">
-    <a href="#">
-      <img v-bind:src="picture" class="object-cover pt-14 w-46" />
-    </a>
-    <div class="flex flex-col justify-start p-6">
+<div class="card pl-4">
+  <article class="flex flex-center pt-8 bg-white">
+    
+    <div class=" ">
       <div class="tags">
      
       </div>
-      <div class="text-3xl font-bold pb-4">{{ title }}</div>
-      <p class="text-sm pb-3">Publié le {{ date | formatDate }}</p>
-      <div class=" w-2/4" v-html="content"></div>
+      <div class="text-3xl font-bold ">{{ title }}</div>
+      <a href="#">
+      <img v-bind:src="picture" class="object-cover pt-14 w-46" />
+    </a>
        <div
         v-for="currentTag in tag"
         v-bind:key="currentTag.id"
@@ -19,7 +18,10 @@
       >
         <a href="#">{{ currentTag.name }}</a>
       </div>
-      <router-link
+      <p class="text-sm">Publié le {{ date | formatDate }}</p>
+      <div class="" v-html="content"></div>
+      
+      <router-link 
         :to="{ name: 'newsFull', params: { id: postID } }"
         class="uppercase text-gray-800 hover:text-green-400"
       >
@@ -45,10 +47,11 @@ export default {
 
 <style scoped>
 img {
-  width: 400px;
+  width: 200px;
 }
-template {
-  width: 800px;
+.card {
+ 
+  
 }
 .tags{
   display: flex;

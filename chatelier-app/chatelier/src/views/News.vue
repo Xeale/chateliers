@@ -1,5 +1,5 @@
 <template>
-  <section class="w-4/5 flex-col items-center p-20">
+  <section class="article  grid-cols-2 ">
     <card
       class="w-full"
       v-for="post in postList"
@@ -32,5 +32,15 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
+
+.article { 
+   width: 100%;
+   margin-left: auto;
+   justify-content: center;
+   display: grid;
+   grid-template-columns: 30% 30% 30%;
+   border: 5rem  solid;
+   border-color: rgb(204, 199, 192);
+}
 </style>
