@@ -1,30 +1,32 @@
 <template>
-  <article class="flex flex-col shadow my-4">
-    <a href="#" class="hover:opacity-75">
-      <img v-bind:src="picture" class="object-fill" />
+<div class="flex flex-wrap">
+  <article class="flex flex-center m-4">
+    <a href="#">
+      <img v-bind:src="picture" class="object-cover pt-14 w-46" />
     </a>
-    <div class="bg-white flex flex-col justify-start p-6">
+    <div class="flex flex-col justify-start p-6">
       <div class="tags">
-      <div
+     
+      </div>
+      <div class="text-3xl font-bold pb-4">{{ title }}</div>
+      <p class="text-sm pb-3">Publié le {{ date | formatDate }}</p>
+      <div class=" w-2/4" v-html="content"></div>
+       <div
         v-for="currentTag in tag"
         v-bind:key="currentTag.id"
         href="#"
-        class="text-blue-700 text-sm font-bold uppercase pb-4"
+        class=" inline text-blue-700 text-sm font-bold uppercase pb-4"
       >
         <a href="#">{{ currentTag.name }}</a>
       </div>
-      </div>
-      <div class="text-3xl font-bold hover:text-gray-700 pb-4">{{ title }}</div>
-      <p class="text-sm pb-3">Publié le {{ date | formatDate }}</p>
-      <div class="pb-6" v-html="content"></div>
       <router-link
         :to="{ name: 'newsFull', params: { id: postID } }"
-        class="uppercase text-gray-800 hover:text-black"
+        class="uppercase text-gray-800 hover:text-green-400"
       >
-        Continuer la lecture <i class="fas fa-arrow-right"></i
-      ></router-link>
+        Continuer la lecture </router-link>
     </div>
   </article>
+</div>
 </template>
 
 <script>
