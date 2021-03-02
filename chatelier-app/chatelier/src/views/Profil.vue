@@ -1,13 +1,14 @@
 <template>
-  <div id="profil" class="mx-96">
-    <p class="text-2xl">Bienvenue {{ $store.state.username }}</p>
-    <CardProfil
+  <div class="profil" id="profil">
+    <p class="text-2xl my-10">Bienvenue {{ $store.state.username }}</p>
+    <div class="grid grid-cols-3">
+    <CardProfil 
       v-for="course in courseList"
       v-bind:key="course.id"
       v-bind:title="course.title.rendered"
     />
+    </div>
     <button class="btn-grad" v-on:click="save">Enregistrer</button>
-
     <button class="btn-grad" v-on:click="deconnexion">Deconnexion</button>
   </div>
 </template>
@@ -41,9 +42,11 @@ export default {
 };
 </script>
 <style>
-#profil {
+.profil {
   font-family: rosario;
   color: grey;
+  width: 65%;
+  margin: 0 auto;
 }
 
 .btn-grad {
