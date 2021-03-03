@@ -1,12 +1,7 @@
 <template>
-
-    <div>
+    <div class="courseFull">
     <Course :title="title" :video="video" :content="content"/>
   </div>
-        
- 
-  
-  
 </template>
 <script>
 import Course from "../components/Course";
@@ -25,11 +20,12 @@ export default {
       this.title = response.data.title.rendered;
       this.video = response.data.meta.URL_video[0];
       this.content = response.data.content.rendered;
-
-
     }); 
   },
 };
 </script>
-<style scoped>
+<style scoped lang="scss">
+
+
+
 </style>

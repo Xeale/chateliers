@@ -1,6 +1,6 @@
 <template>
-  <div class="m-4">
-    <div class="font-bold text-xl mb-2">{{ title }}</div>
+  <div class="courseFull">
+    <div class="title">{{ title }}</div>
     <video-embed :src="video"></video-embed>
     <p v-html="content"></p>
   </div>
@@ -18,9 +18,18 @@ export default {
 };
 </script>
 
-<style scoped>
-img {
-  width: 150px;
+<style scoped lang="scss">
+.courseFull {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 35vh;
+  color: grey;
+  font-family: rosario;
+  .title {
+    font-size: 2rem;
+  }
 }
 </style>
 
