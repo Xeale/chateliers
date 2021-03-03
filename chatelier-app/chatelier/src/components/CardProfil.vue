@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>{{ title }}</p>
-    <textarea class="border rounded-md"></textarea>
+    <textarea cols='35' class="border rounded-md"></textarea>
   </div>
 </template>
 

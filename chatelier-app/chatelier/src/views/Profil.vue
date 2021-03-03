@@ -1,15 +1,17 @@
 <template>
   <div class="profil" id="profil">
-    <p class="text-2xl my-10">Bienvenue {{ $store.state.username }}</p>
-    <div class="grid grid-cols-3">
-    <CardProfil 
-      v-for="course in courseList"
-      v-bind:key="course.id"
-      v-bind:title="course.title.rendered"
-    />
+    <h1 class="text-2xl my-10">Bienvenue {{ $store.state.username }}</h1>
+    <div class="grid lg:grid-cols-2 xl:grid-cols-3">
+      <CardProfil
+        v-for="course in courseList"
+        v-bind:key="course.id"
+        v-bind:title="course.title.rendered"
+      />
     </div>
-    <button class="btn-grad" v-on:click="save">Enregistrer</button>
-    <button class="btn-grad" v-on:click="deconnexion">Deconnexion</button>
+    <div class="button">
+      <button class="btn-grad" v-on:click="save">Enregistrer</button>
+      <button class="btn-grad" v-on:click="deconnexion">Deconnexion</button>
+    </div>
   </div>
 </template>
 <script>
@@ -41,12 +43,23 @@ export default {
   },
 };
 </script>
-<style>
+<style lang='scss'>
 .profil {
   font-family: rosario;
   color: grey;
   width: 65%;
   margin: 0 auto;
+  .button {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  h1{
+    font-family: rosario;
+    margin: 1.5rem 0 1.5rem 0;
+    text-transform: capitalize;
+    text-decoration: underline;
+  }
 }
 
 .btn-grad {
@@ -58,7 +71,7 @@ export default {
   );
 }
 .btn-grad {
-  padding: 15px 45px;
+  padding: 10px 40px;
   text-align: center;
   text-transform: uppercase;
   transition: 0.5s;

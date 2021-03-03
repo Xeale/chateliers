@@ -42,6 +42,9 @@ $Border: 1.5px solid #c0c0c0;
     padding: 10px;
     border: $Border;
     margin-top: 2%;
+      // height :250px;
+      // overflow: auto;
+
   }
 }
 </style>
