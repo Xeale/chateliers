@@ -7,14 +7,14 @@
       <div class="slide-right backg w-2/4 z-10 m-4 py-44 bg-white opacity-75 object-cover background">
         <div class="flex justify-center">
           <div class="slide-right">
-            <h1 class="text-5xl font-medium">L'art de la chapellerie</h1>
-            <h2 class="mt-2">Créez vos chapeaux</h2>
-          </div>
-          <div class="absolute mr-4">
+            <h1 class="ml-80 text-lg font-medium ">
+Développez votre passion de la chapellerie en apprenant les techniques de fabrication de chapeaux avec des didacticiels et vidéos.</h1>
+            <h2 class="mt-2 ml-80">Créez vos chapeaux</h2>
             <button
-              class="z-50 mt-44 ml-4 border-2 border-green-400 text-green-400 p-2 px-2 h-12 uppercase hover:shadow hover:bg-green-400 hover:border-green-300 hover:text-white"
+              class="z-50 font-semibold mt-44 border-2 border-green-300 text-green-300 p-2 px-2 h-12 uppercase hover:shadow hover:bg-green-300  hover:border-green-300 hover:text-white"
             >Voir Trailer</button>
           </div>
+          
         </div>
       </div>
     </div>
@@ -39,11 +39,12 @@ button {
   height: 608px;
 }
 h1 {
-  font-family: "Calligraffitti", cursive;
+  font-family: "rosario", cursive;
+  
 }
 h2 {
   font-family: "rosario";
-  text-align: center;
+  
 }
 .slide-left {
  overflow: hidden; 
