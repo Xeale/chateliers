@@ -1,7 +1,4 @@
 <template>
-
-
-
   <div class="courseForbidden">
     <h1>Veuillez vous inscrire pour accéder aux cours</h1>
     <router-link
@@ -9,7 +6,6 @@
       :to="{ name: 'login' }"
       >Connexion</router-link
     >
-
   </div>
 </template>
 
