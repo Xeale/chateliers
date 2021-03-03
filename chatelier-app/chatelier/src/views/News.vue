@@ -35,12 +35,22 @@ export default {
 <style scoped>
 
 .article { 
+  padding-top: 4px;
    width: 100%;
    margin-left: auto;
    justify-content: center;
+   margin: 0 auto;
    display: grid;
    grid-template-columns: 30% 30% 30%;
    border: 5rem  solid;
-   border-color: rgb(204, 199, 192);
+   border-color: rgb(235, 233, 231);
+   gap: 5px;
+   
 }
-</style>
+
+.card {
+  border-bottom: thin solid rgb(214, 212, 209);
+  
+  width: 90%;
+}
+  </style>
