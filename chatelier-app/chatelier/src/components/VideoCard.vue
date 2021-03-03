@@ -7,7 +7,6 @@
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2">{{ title }}</div>
           <div class="wrapper-video">
-            <video-embed :src="video"></video-embed>
             <img :src="picture" alt="">
             <div class="pl-2" v-html="content"></div>
           </div>

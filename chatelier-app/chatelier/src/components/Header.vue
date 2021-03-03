@@ -88,6 +88,7 @@ a:after {
   left: 50%;
   position: absolute;
   background: rgb(128, 216, 212);
+  bottom: 20px;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
