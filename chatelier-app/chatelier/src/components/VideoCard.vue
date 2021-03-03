@@ -5,10 +5,13 @@
         class="bg-white overflow-hidden shadow-lg transform hover:scale-110 motion-reduce:transform-none transition duration-300 ease-in-out ..."
       >
         <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">{{ title }}</div>
+          <div class="font-bold text-xl text-center 
+          text-gray-800 self-center mb-0">{{ title }}</div>
           <div class="wrapper-video">
-            <img :src="picture" alt="">
-            <div class="pl-2" v-html="content"></div>
+            
+            <img v-bind:src="picture" class="object-cover pt-4 w-2/6" />
+            <div class="pl-2 self-center" v-html="content"></div>
+
           </div>
         </div>
         <div class="px-6 pt-4 pb-2">
@@ -39,6 +42,7 @@ export default {
     title: String,
     content: String,
     courseID: Number,
+    picture: [String, Boolean],
     video: String,
     levelList: Array,
     materialList: Array,

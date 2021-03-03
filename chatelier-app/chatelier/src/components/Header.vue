@@ -66,7 +66,7 @@ nav a {
   color: gray;
 }
 .router-link-exact-active {
-  border-bottom: 2px solid rgb(112, 230, 184);
+  border-bottom: 2px solid rgb(149, 224, 199);
   color: rgb(41, 41, 41);
 }
 
@@ -87,8 +87,8 @@ a:after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: rgb(128, 216, 212);
-  bottom: 20px;
+  background: rgb(149, 224, 199);
+  bottom: -2px;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
