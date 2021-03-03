@@ -132,7 +132,7 @@ header nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.4s;ve apple pie I love chocolate cake chupa chups caramels. Carrot cake soufflé I love pastry pastry chupa chups chocolate cake lemon drops. Powder sesame snaps cheesecake donut cotton candy caramels cheesecake I love. Cheesecake jujubes sugar plum chupa chups cotton candy cookie gummies chocolate cake halvah. Croissant gummies candy canes chocolate bear claw gingerbread. Dragée lollipop I love tiramisu sweet marzipan. Bear claw pudding icing danish gingerbread marshmallow chocolate apple pie pastry. Cake ice cream croissant. Sweet tootsie roll pudding cake. Cotton candy dessert I love gummi bears lemon drops lemon drops chocolate I love. Apple pie cake topping. Halvah pudding pie cookie sesame snaps. Chocolate cakegit add
+  transition: 0.4s;
   top: 50%;
 }
 

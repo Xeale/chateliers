@@ -27,17 +27,25 @@ export default {
 .about{
   font-display: rosario;
   color: rgb(71, 69, 69);
-  max-width: 60%;
+  max-width: 55%;
   margin: 0 auto;
+  h2{
+    font-size: 2rem;
+    margin: 2rem 0 1rem 0;
+    text-align: center;
+    text-decoration: underline;
+  }
   img{
     border: 2px solid grey;
     border-radius: 5px;
     padding:1.5px;
-    overflow: auto;
+    float: left;
+    margin: 0 1rem 0.5rem 0;
   }
-  #modiste, #duo{
-    display: flex;
-    gap: 1rem;
+  #duo{
+    img{
+    width:500px;
+    }
   }
 }
 </style>
