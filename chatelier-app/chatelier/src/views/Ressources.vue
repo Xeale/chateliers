@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class='ressourcePage'>
     <nav class="nav-ressources">
       <a href="#materiel">Matériel</a>
       <a href="#fournisseur">Fournisseur</a>
@@ -14,7 +14,7 @@
       v-bind:histoireMode="ressources.meta.histoire_de_la_mode[0]"
       v-bind:usage="ressources.meta.usage[0]"
       v-bind:vocabulaire="ressources.meta.vocabulaire_de_la_chapellerie[0]"
-    />
+      />
   </div>
 </template>
 <script>
@@ -35,6 +35,10 @@ export default {
 };
 </script>
 <style lang="scss">
+.ressourcePage{
+    background: #f3f4f6;
+
+}
 .nav-ressources {
   top: 0px;
   position: sticky;
@@ -43,7 +47,7 @@ export default {
   height: 2rem;
   align-items: center;
   justify-content: center;
-  background-color: #fcfbfa;
+  background-color: #f3f4f6;
   font-size: x-large;
   box-shadow: inset 0px 0px 2px 2px rgb(29 28 26 / 5%);
   color: gray;

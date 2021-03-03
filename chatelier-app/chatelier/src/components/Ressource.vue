@@ -29,7 +29,7 @@ export default {
 <style lang="scss">
 $Border: 1.5px solid #c0c0c0;
 .ressources {
-  width: 80%;
+  width: 55%;
   margin: 0 auto;
 
   h1 {
@@ -40,11 +40,15 @@ $Border: 1.5px solid #c0c0c0;
   }
   p {
     padding: 10px;
-    border: $Border;
     margin-top: 2%;
+
       // height :250px;
       // overflow: auto;
 
   }
+   img{
+     float: left;
+     margin: 0 1rem 0.5rem 0;
+   }
 }
 </style>
